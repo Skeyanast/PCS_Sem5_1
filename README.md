@@ -1,16 +1,58 @@
-# flutter_projects
+Программирование корпоративных систем ПР1.
+Муравьев Иван ЭФБО-02-22
 
-A new Flutter project.
+В качестве среды разработки была выбрана Android Studio.
+Таким образом на компьютер с ОС Windows была установлена Android Studio и настроена для работы с мобильными приложениями под ОС Windows для удобной отладки на ПК.
+Настроили режим терминала в Android Studio для личного удобства.
+Был создан новый проект мобильного приложения в выбранной среде разработки и выполнены несколько простых операций, такие как создание нового файла, запуск приложения на эмуляторе, а также на реальном устройстве.
+Далее будет представлено описание процесса установки и настройки среды разработки, а также результаты выполнения операций над проектом и соответствующие скриншоты.
+1. Для начала загрузим Android Studio с официального сайта с адреса https://developer.android.com/studio.
+![изображение](https://github.com/user-attachments/assets/12e430d5-c480-4efe-8ce5-b851dbf1c31f)
 
-## Getting Started
+2. Далее производим необходимую установку приложения среды разработки на ПК. Также указываем необходимым компонент Android Virtual Device, то есть эмулятор.
 
-This project is a starting point for a Flutter application.
+3. При первом запуске Android Studio первым делом устанавливаем ряд дополнительных компонентов, в частности, Android SDK. После завершения установки откроется собственно стартовый экран Android Studio, и мы сможем начать создавать приложения под Android:
+![изображение](https://github.com/user-attachments/assets/c7a38c16-4b42-4bdc-a134-843795efcc6e)
 
-A few resources to get you started if this is your first Flutter project:
+4. Дополнительные компоненты Android SDK, например, новые платформы, или удалить устаревшие компоненты можно в SDK Manager:
+![изображение](https://github.com/user-attachments/assets/0be8046a-def1-40ac-9973-084a28bd7026)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5. Также поставим инструмент разработки Android SDK Command-line Tools (latest) для работы с консолью:
+![изображение](https://github.com/user-attachments/assets/58ca632b-7eee-4c19-9503-7f859757941b)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+6. Установка Flutter SDK:
+![изображение](https://github.com/user-attachments/assets/a2e37337-27ea-4188-807a-dee75549f966)
+
+7. Для работы Flutter SDK в Windows в системе должен быть установлен Git for Windows, который можно найти по адресу https://git-scm.com/download/win. На локальном компьютере уже установлен Git:
+![изображение](https://github.com/user-attachments/assets/3f672cbb-8854-4086-bb8c-38eb7f149532)
+
+8. Также на Windows следует установить пакет Microsoft C++ Build Tools. В программе установки надо выбрать пункт "Разработка классических приложений на C++" (Desktop development with C++).
+![изображение](https://github.com/user-attachments/assets/483a85cc-c6cb-4e22-b09a-409657d8bb4e)
+
+9. Непосредственно для установки Flutter SDK перейдем на страницу https://docs.flutter.dev/get-started/install/windows/desktop?tab=download. На этой странице найдем в секции Get the Flutter SDK и установим архив.
+10. Поскольку мы работаем в Windows, то для добавления переменной среды через поиск найдем параметр "Изменение переменных среды текущего пользователя". Для этого введем в поле поиска "Изменение переменных" и пропишем переменную для flutter.
+![изображение](https://github.com/user-attachments/assets/28db2fe7-4a6d-43ef-a59d-d6ba6515cecd)
+
+11. Проверим установку. Чтобы проверить версию Flutter, откроем командную строку и введем команду flutter --version, которая выводит версию фреймворка:
+![изображение](https://github.com/user-attachments/assets/0889293c-d45f-478f-8126-b2a744cf6fde)
+
+12. Чтобы проверить, что все установлено и настроено правильно, надо ввести команду flutter doctor:
+Таким образом, критических ошибок нет, можно работать с фреймворком.
+![изображение](https://github.com/user-attachments/assets/d7f55284-bc6b-477a-9400-6536d4a8e189)
+
+13. Далее необходимо скачать плагин Flutter в Android Studio Plugins для работы с проектами на Flutter:
+![изображение](https://github.com/user-attachments/assets/8fcce086-719e-44ca-9c8e-d6545bb3cbfc)
+
+14. Теперь можно создавать проект на Flutter:
+![изображение](https://github.com/user-attachments/assets/244e28a8-e2a3-4838-9b95-29d46024fa22)
+
+15. Запустим проект на Windows с подключением скачанного ранее эмулятора:
+![изображение](https://github.com/user-attachments/assets/e6178661-47f0-4b9a-9d5e-4232b9e76662)
+
+![изображение](https://github.com/user-attachments/assets/3d72e453-7854-4415-a01c-368373354ecc)
+
+Таким образом, начальный проект успешно запускается под Windows.
+16. Также по команде из терминала в среде разработки можно осуществлять Hot Restart и Hot Reload приложения:
+![изображение](https://github.com/user-attachments/assets/eae7a34d-02b9-4f15-863c-8f2f8752014a)
+
+Таким образом, были установлены все необходимые компоненты и запущен тестовый проект.
